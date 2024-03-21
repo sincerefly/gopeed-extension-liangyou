@@ -1,0 +1,30 @@
+{
+  "name": "gopeed-extention-liangyou",
+  "author": "sincerefly",
+  "title": "良友圣经学院课程下载",
+  "description": "良友(https://lts33.net/) 插件",
+  "icon": "logo.png",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sincerefly/gopeed-extension-liangyou",
+  "repository": {
+    "url": "https://github.com/sincerefly/gopeed-extension-liangyou"
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": ["*://lts33.net/*"]
+      },
+      "entry": "dist/index.js"
+    }
+  ],
+  "settings": [
+    {
+      "name": "ua",
+      "title": "User-Agent",
+      "description": "HTTP User-Agent header",
+      "type": "string",
+      "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.47"
+    }
+  ]
+}
